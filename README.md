@@ -15,7 +15,7 @@ These guidelines rest (no pun intended) on the following basic premises:
    described by Roy Fielding in [chapter 5](https://www.ics.uci.edu/%7Efielding/pubs/dissertation/rest_arch_style.htm)
    of his dissertation on *Architectural Styles and the Design of Network-based
    Software Architectures*. REST is **not the software architecture for any
-   specific system** and it is **not a technology* or a technological standard
+   specific system** and it is **not a technology or a technological standard
    or protocol**. Actual systems that are designed and implemented in accordance
    with REST can be said to be REST-ful.
 
