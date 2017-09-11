@@ -11,15 +11,15 @@ can be of value to other developers struggling with the same issues.
 
 These guidelines rest (no pun intended) on the following basic premises:
 
- * **REST** is an *architectural style for software systems* as conceived and
+ * **REST is an architectural style for software systems** as conceived and
    described by Roy Fielding in [chapter 5](https://www.ics.uci.edu/%7Efielding/pubs/dissertation/rest_arch_style.htm)
    of his dissertation on *Architectural Styles and the Design of Network-based
-   Software Architectures*. REST is not the *software architecture* for any
-   specific system and it is not a *technology* or a *technological standard
-   or protocol*. Actual systems that are designed and implemented in accordance
+   Software Architectures*. REST is **not the software architecture for any
+   specific system** and it is **not a technology* or a technological standard
+   or protocol**. Actual systems that are designed and implemented in accordance
    with REST can be said to be REST-ful.
 
- * **HTTP** is an *application level protocol* which is described in the IETF:s
+ * **HTTP is an application level protocol** which is described in the IETF:s
    [RFC 7231](https://tools.ietf.org/html/rfc7231). It is designed to enable
    and facilitate the design and implementation of software systems that are
    REST-ful.
