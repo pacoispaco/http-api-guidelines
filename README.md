@@ -20,9 +20,14 @@ These guidelines rest (no pun intended) on the following basic premises:
    with REST can be said to be REST-ful.
 
  * **HTTP is an application level protocol** which is described in the IETF:s
-   [RFC 7231](https://tools.ietf.org/html/rfc7231). It is designed to enable
-   and facilitate the design and implementation of software systems that are
-   REST-ful.
+   [RFC 7230: Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing](https://tools.ietf.org/html/rfc7230),
+   [RFC 7231: Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://tools.ietf.org/html/rfc7231),
+   [RFC 7232: Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests](https://tools.ietf.org/html/rfc7232),
+   [RFC 7233: Hypertext Transfer Protocol (HTTP/1.1): Range Requests](https://tools.ietf.org/html/rfc7233),
+   [RFC 7234: Hypertext Transfer Protocol (HTTP/1.1): Caching](https://tools.ietf.org/html/rfc7234) and
+   [RFC 7235: Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://tools.ietf.org/html/rfc7235).
+   It is designed to enable and facilitate the design and implementation of
+   software systems that are REST-ful.
  
  * REST as an architectural style for software systems leaves a whole number of
    practical design and implementation issues open on how to actually implement
