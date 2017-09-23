@@ -14,7 +14,7 @@
 
 "There is something to be learned from the fact that the Internet and World Wide
 Web work as well as they do, without having to be recompiled every morning."
--- Paul Cohen
+-- Paul Cohen +
 
 This document contains some notes on designing and implementing REST-ful HTTP
 API:s. I started writing this document simply because I felt a need to document
@@ -26,7 +26,7 @@ Happy hacking!
 == The starting point
 
 "Begin at the beginning and go on till you come to the end; then stop."
--- Lewis Carroll
+-- Lewis Carroll +
 
 These guidelines are based on the following basic premises:
 
@@ -56,8 +56,6 @@ These guidelines are based on the following basic premises:
 ** https://tools.ietf.org/html/rfc7233[_Hypertext Transfer Protocol (HTTP/1.1): Range Requests_].footnote:[IETF RFC 7233, URL: https://tools.ietf.org/html/rfc7233]
 ** https://tools.ietf.org/html/rfc7234[_Hypertext Transfer Protocol (HTTP/1.1): Caching_].footnote:[IETF RFC 7234, URL: https://tools.ietf.org/html/rfc7234]
 ** https://tools.ietf.org/html/rfc7235[_Hypertext Transfer Protocol (HTTP/1.1): Authentication_].footnote:[IETF RFC 7235, URL: https://tools.ietf.org/html/rfc7235]
-   It is designed to enable and facilitate the design and implementation of
-   software systems that are REST-ful.
 
  * An achitectural style, like REST, is *not a design specification or recipy
    for implementing systems*. It is a description of a number of constraints and
