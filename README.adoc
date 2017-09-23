@@ -1,0 +1,95 @@
+== Guidelines for designing and implementing HTTP API:s
+:author: Paul Cohen(c) 2012-2017
+:version: Version 0.1
+:sectnums:
+:toc:
+:toclevels: 4
+:toc-title: Contents
+:experimental:
+:description: Guidelines
+:keywords: AsciiDoc
+:imagesdir: ./img
+
+== Introduction
+
+"There is something to be learned from the fact that the Internet and World Wide
+Web work as well as they do, without having to be recompiled every morning."
+-- Paul Cohen
+
+This document contains some notes on designing and implementing REST-ful HTTP
+API:s. I started writing this document simply because I felt a need to document
+my own slightly confused ideas about how to do REST-ful HTTP API:s. I hope it
+can be of value to other developers struggling with the same issues.
+
+Happy hacking!
+
+== The starting point
+
+"Begin at the beginning and go on till you come to the end; then stop."
+-- Lewis Carroll
+
+These guidelines are based on the following basic premises:
+
+*  We want to design and implement systems that can interact with other systems
+   in a distributed network environment. The other systems in this envirnoment
+   can be implemented with different technologies, by different and independent
+   organisations, with different business models and objectives and thus with
+   very differing release and update cycles. We also want to be able to continue
+   to develop our system at the same time as the other systems are beeing
+   developed whithout impacting the other systems negatively or having our system
+   being impacted negatively by changes in the other systems.
+
+* *REST is an architectural style for software systems* as conceived and
+   described by Roy Fielding in chapter 5 of his dissertation https://www.ics.uci.edu/%7Efielding/pubs/dissertation/rest_arch_style.htmi[_Architectural Styles and
+   the Design of Network-based Software Architectures_]. REST is **not the
+   software architecture for any specific system** and it is **not a technology
+   or a technological standard or protocol**. Actual systems that are designed
+   and implemented in accordance with the REST architectural style can be said
+   to be REST-ful.
+
+* *HTTP is an application level protocol*. It is designed to enable and facilitate
+   the design and implementation of systems that have the architectural style
+   described by REST. HTTP is described in the following IETF RFC:s:
+** https://tools.ietf.org/html/rfc7230[_Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing_].footnote:[IETF RFC 7230, URL: https://tools.ietf.org/html/rfc7230]
+** https://tools.ietf.org/html/rfc7231[_Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content_].footnote:[IETF RFC 7231, URL: https://tools.ietf.org/html/rfc7231]
+** https://tools.ietf.org/html/rfc7232[_Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests_].footnote:[IETF RFC 7232, URL: https://tools.ietf.org/html/rfc7232]
+** https://tools.ietf.org/html/rfc7233[_Hypertext Transfer Protocol (HTTP/1.1): Range Requests_].footnote:[IETF RFC 7233, URL: https://tools.ietf.org/html/rfc7233]
+** https://tools.ietf.org/html/rfc7234[_Hypertext Transfer Protocol (HTTP/1.1): Caching_].footnote:[IETF RFC 7234, URL: https://tools.ietf.org/html/rfc7234]
+** https://tools.ietf.org/html/rfc7235[_Hypertext Transfer Protocol (HTTP/1.1): Authentication_].footnote:[IETF RFC 7235, URL: https://tools.ietf.org/html/rfc7235]
+   It is designed to enable and facilitate the design and implementation of
+   software systems that are REST-ful.
+
+ * An achitectural style, like REST, is *not a design specification or recipy
+   for implementing systems*. It is a description of a number of constraints and
+   properties that systems can have and the emergent properties that such systems
+   will have. To implement an actual system with a specific architectural style
+   requires developers to still make all practical design and implementation
+   decisions regarding which technical protocols and standards to use as well
+   as to actually write the software.
+
+ * An application level protocol, like HTTP, is *not a technical specification
+   of a specific system*. It is a specification of how different applications
+   should interact, but not of what data should be exchanged or when it should
+   be exchanged. Therefore developers of a specific system that uses HTTP have to
+   make, as always, all the decisions regarding that system's use of HTTP and they
+   have to implement the system. Also, just using HTTP, does not mean that a
+   system becomes REST-ful. Developers need to understand REST and the emergent
+   properties of that architectural style and construct their system using HTTP
+   as a tool to achieve those properties.
+
+ * The Unix Philosophy as described in http://www.catb.org/~esr/writings/taoup/html/ch01s06.html[_Basics of the Unix Philosophy_].footnote:[URL: http://www.catb.org/~esr/writings/taoup/html/ch01s06.html]
+   by Eric S. Raymond, is good.
+
+ * It would be nice to have a set of practical guidelines for using HTTP to
+   design and implement HTTP API:s that enable systems using the HTTP API to
+   be REST-ful.
+
+ * In the end we always have to think, invent and write code!
+
+The ambition of these guidelines is to use the REST-architectural style together
+with the Unix philosophy as a basis for a set of practical design and
+implementation choices for HTTP API:s that are REST-ful but, equally important,
+pragmatic and simple.
+
+This document is organized into a number of sections, each dealing with a
+particular aspect of designing and implementing REST-ful HTTP API:s.
