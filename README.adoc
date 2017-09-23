@@ -16,6 +16,7 @@
 There is something to be learned from the fact that the Internet and World Wide
 Web work as well as they do, without having to be recompiled every morning.
 
+
 This document contains some notes on designing and implementing REST-ful HTTP
 API:s. I started writing this document simply because I felt a need to document
 my own slightly confused ideas about how to do REST-ful HTTP API:s. I hope it
@@ -27,6 +28,7 @@ Happy hacking!
 
 [quote, Lewis C. Carroll, Alice in Wonderland]
 Begin at the beginning and go on till you come to the end; then stop.
+
 
 These guidelines are based on the following basic premises:
 
