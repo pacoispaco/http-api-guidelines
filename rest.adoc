@@ -1,0 +1,29 @@
+[[chapter-rest]]
+== The REST Architectural Style
+
+This is a simple and very brief summary of the REST architectural style. REST
+was first described, and coined as a term, by Roy Fielding in his dissertation
+_Architectural Styles and the Design of Network-based Software Architectures_
+which was published in 2000.
+
+REST stands for *Representational State Transfer* and denotes a set of software
+architectural constraints and principles that can be used to characterize
+software systems and to design and implement software systems.
+
+Fielding's dissertation was in many ways a formalization of the principles and
+architectural constraints he had identified and invented as part of his work
+with the HTTP protocol and the World Wide Web. In the dissertation Fielding
+begins with defining concepts and a terminology for categorizing and reasoning
+about software architectures. Each category of software architectures is called
+an *achitectural style*.
+
+These concepts and categories are then used by Fielding to reason about the
+properties that emerge in systems with a certain software architecture. In
+particular, the REST architectural style emphasizes emergant properties such as
+scalability of component interactions, generality of interfaces, independent
+deployment of components, and intermediary components to reduce interaction
+latency, enforce security, and encapsulate legacy systems (from the abstract
+of the dissertation).
+
+The architectural constraints of REST are as follows. Each constraint is
+exemplified by some HTTP features and World Wide Web examples.

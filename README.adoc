@@ -5,11 +5,13 @@
 :toc:
 :toclevels: 4
 :toc-title: Contents
+:toc-placement: manual
 :experimental:
 :description: Guidelines
 :keywords: AsciiDoc
 :imagesdir: ./img
 
+[[chapter-introduction]]
 == Introduction
 
 [quote, Paul Cohen]
@@ -24,16 +26,18 @@ can be of value to other developers struggling with the same issues.
 
 Happy hacking!
 
+toc::[]
+
+[[chapter-the-starting-point]]
 == The starting point
 
 [quote, Lewis C. Carroll, Alice in Wonderland]
 Begin at the beginning and go on till you come to the end; then stop.
 
-
 These guidelines are based on the following basic premises:
 
 *  We want to design and implement systems that can interact with other systems
-   in a distributed network environment. The other systems in this envirnoment
+   in a distributed network environment. The other systems in this environment
    can be implemented with different technologies, by different and independent
    organisations, with different business models and objectives and thus with
    very differing release and update cycles. We also want to be able to continue
@@ -49,9 +53,10 @@ These guidelines are based on the following basic premises:
    and implemented in accordance with the REST architectural style can be said
    to be REST-ful.
 
-* *HTTP is an application level protocol*. It is designed to enable and facilitate
-   the design and implementation of systems that have the architectural style
-   described by REST. HTTP is described in the following IETF RFC:s:
+* *HTTP is a technical and application level protocol*. It is designed to enable
+   and facilitate the design and implementation of systems that have the
+   architectural style described by REST. HTTP is described in the following
+   IETF RFC:s:
 ** https://tools.ietf.org/html/rfc7230[_Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing_].footnote:[IETF RFC 7230, URL: https://tools.ietf.org/html/rfc7230]
 ** https://tools.ietf.org/html/rfc7231[_Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content_].footnote:[IETF RFC 7231, URL: https://tools.ietf.org/html/rfc7231]
 ** https://tools.ietf.org/html/rfc7232[_Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests_].footnote:[IETF RFC 7232, URL: https://tools.ietf.org/html/rfc7232]
@@ -93,3 +98,5 @@ pragmatic and simple.
 
 This document is organized into a number of sections, each dealing with a
 particular aspect of designing and implementing REST-ful HTTP API:s.
+
+include::rest.adoc[]
