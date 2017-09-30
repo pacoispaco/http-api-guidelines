@@ -26,4 +26,44 @@ latency, enforce security, and encapsulate legacy systems (from the abstract
 of the dissertation).
 
 The architectural constraints of REST are as follows. Each constraint is
-exemplified by some HTTP features and World Wide Web examples.
+exemplified by some HTTP features and practical examples.
+
+ * **Client-server**. Web browsers and web servers.
+ * **Stateless**. Every HTTP request-response is independent of other request-
+   responses.
+ * **Cache**. This means that we can partially or completely eliminate some
+   interactions and data transfers, improving efficiency, scalability and
+   in the end, user-perceived performance. HTTP headers for indicating if ai
+   resources is cacheable or not, and HTTP proxies and cache software.
+ * **Uniform interface**. REST is defined as having four interfacei
+   constraints: **identification of resources**; **manipulation of resources
+   through representations**; **self-descriptive messages**; and, **hypermedia
+   as the engine of application state**, also known as HATEOAS. HTTP relies on
+   URL:s for identifying resources, media types for representation of resources
+   and a set of HTTP commands; GET, POST etc for manipulating them, HTTP headers
+   for describing messages. HTTP allows for hyperlinks to be specified in headers
+   and then there are media types that enable hyperlinks to be embedded in
+   resource representations like HTML.
+ * **Layered system**.  This means that in each client-server interaction, the
+   client can completely ignore what the server needs to do respond to client
+   requests. The server can be a client to other server systems. This can be
+   used to improve system scalability by enabling load balancing, HTTP proxies
+   and intermediaries.
+ * **Code-on-demand**. Allowing executable code to be downloaded improves system
+   extensibility but reduces visibility so this is an optional constraint.
+   JavaScript in browsers.
+
+The core data elements of REST are:
+
+ * Resources and Resource Identifiers. URI:s, URN:s and URL:s.
+ * Representations. HTTP media types.
+
+HTTP is an application protocol for distributed hypermedia systems and is
+designed to enable the construction of REST-ful systems. It can however like
+many technical protocols be used for many other purposes and the construction
+of systems that have other architectural properties than REST. WS/SOAP uses HTTP
+as a transport protocol, which is ... an idea. However if a system wishes to use
+HTTP for its intended purpose and for building REST-ful systems and thus for
+achieving the architectural properties of a REST-style system, it is important
+to use HTTP as it was intended and pay close attention to the architectural
+constraints of REST.
