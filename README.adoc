@@ -40,10 +40,10 @@ These guidelines are based on the following basic premises:
    in a distributed network environment. The other systems in this environment
    can be implemented with different technologies, by different and independent
    organisations, with different business models and objectives and thus with
-   very differing release and update cycles. We also want to be able to continue
-   to develop our system at the same time as the other systems are beeing
-   developed whithout impacting the other systems negatively or having our system
-   being impacted negatively by changes in the other systems.
+   differing release and update cycles. We also want to be able to continue to
+   develop our system at the same time as the other systems are beeing developed
+   whithout impacting the other systems negatively or having our system being
+   impacted negatively by changes in the other systems.
 
 * *REST is an architectural style for software systems* as conceived and
    described by Roy Fielding in chapter 5 of his dissertation https://www.ics.uci.edu/%7Efielding/pubs/dissertation/rest_arch_style.htmi[_Architectural Styles and
