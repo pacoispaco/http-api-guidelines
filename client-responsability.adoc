@@ -1,0 +1,62 @@
+== The Responsibility of the Client
+
+It is important to keep in mind the business and organisational setting that
+we are developing these client-server based systems in. The server and the
+clients are typically developed and operated by different organisations with
+different business aims and processes. Not only that, but each client may
+differ in functionality, technology and development processes. This means that
+it is impossible to demand or assume that development of clients and servers
+can be done in lockstep according to a common plan or process. The
+architecture, the protocols and the technology must allow for as much freedom
+and independence as possible when it comes to evolving clients and servers,
+without loosing the reliability of technical formalism and specifications.
+
+In many ways the most important stakeholders in a REST-ful HTTP API are the
+clients. After all it is for the clients that we develop an API in the first
+place. In distributed web system environments we, as developers of the API,
+very seldom know a priori exactly which clients may want to access the API and
+we very seldom have a complete set of requirements or use cases to start out
+from. However we usually know of at least one or a few clients and their needs,
+and these should be the drivers for our design and implementation decisions.
+
+For a REST-based architecture to work well it is equally important that the
+clients embrace the REST architectural style as well as the servers and API:s.
+One of the most important properties that you want to achieve in distributed
+systems is loose coupling. Loose couplingfootnote:[For a summary of various
+aspects of loose coupling see _Why is the Web Loosely Coupled? A Multi-Faceted
+Metric for Service Design_ by Pautasso & Wilde, 2009. URL:
+https://wiki.kuali.org/download/attachments/140968166/LooseCoupling.pdf]
+can mean a lot of things but here in a truly distributed environment we are
+interested mainly in the aspect of evolvability; the ability for the server
+and the clients to evolve as freely and independently as possible from each
+other.
+
+The most import design principle to adhere to, for clients that wish to use a
+REST-ful HTTP API, is the liberal aspect of Postel's Lawfootnote:[See: http://en.wikipedia.org/wiki/Robustness_principle].
+
+ * **Client principle 1**: _Be liberal in what you import and strict in what you
+   emit_.
+
+Clients that are implemented in accordance with this will be more robust with
+regard to changes in the API and have greater chance of avoiding breaking
+changes than those clients that implement too many assumptions on the API and
+the resource representations it returns.
+
+The most important design principle for REST-ful HTTP API:s is;
+
+ * **API principle 1**: _Avoid over-specification_.
+
+Over-specification leads to tighter coupling between clients and the API and it
+increases the risk of changes in the API actually becoming breaking changes for
+clients. This in turn means a lower degree of freedom to evolve for the API. A
+consequence of this principle is that in the case of ambiguity, clients must be
+prepared for the unexpected! However, in order for the relation between clients
+and the API to be as harmonious as possible the API should also follow the
+principle of least surprise 5footnote:[Also known as the principle of least
+astonishment. See: http://en.wikipedia.org/wiki/Principle_of_least_astonishment]:
+
+ * **API principle 2**: _In interface design, always do the least surprising thing_.
+
+In practice this basically means for the API; be consistent. This is important
+for making client developers happy and will encourage more developers to use the
+API!

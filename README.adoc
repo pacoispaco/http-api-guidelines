@@ -100,3 +100,5 @@ This document is organized into a number of sections, each dealing with a
 particular aspect of designing and implementing REST-ful HTTP API:s.
 
 include::rest.adoc[]
+
+include::client-responsability.adoc[]
