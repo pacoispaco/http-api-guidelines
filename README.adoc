@@ -15,14 +15,10 @@
 == Introduction
 
 [quote, Paul Cohen]
-There is something to be learned from the fact that the Internet and World Wide
-Web work as well as they do, without having to be recompiled every morning.
+There is something to be learned from the fact that the Internet and World Wide Web work as well as they do, without having to be recompiled every morning.
 
 
-This document contains some notes on designing and implementing REST-ful HTTP
-API:s. I started writing this document simply because I felt a need to document
-my own slightly confused ideas about how to do REST-ful HTTP API:s. I hope it
-can be of value to other developers struggling with the same issues.
+This document contains notes on designing and implementing REST-ful HTTP API:s. I started writing this document simply because I felt a need to document my own slightly confused ideas about how to do REST-ful HTTP API:s. I hope it can be of value to other programmers struggling with the same issues.
 
 Happy hacking!
 
