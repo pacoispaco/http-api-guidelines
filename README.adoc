@@ -34,16 +34,13 @@ toc::[]
 [quote, Lewis C. Carroll, Alice in Wonderland]
 Begin at the beginning and go on till you come to the end; then stop.
 
-These guidelines are based on the following basic premises:
+These guidelines are intended for programmers who want want to design and program systems that can interact with other systems in a distributed network environment.
 
-*  We want to design and implement systems that can interact with other systems
-   in a distributed network environment. The other systems in this environment
-   can be implemented with different technologies, by different and independent
-   organisations, with different business models and objectives and thus with
-   differing release and update cycles. We also want to be able to continue to
-   develop our system at the same time as the other systems are beeing developed
-   whithout impacting the other systems negatively or having our system being
-   impacted negatively by changes in the other systems.
+In particular, the other systems in this distributed network environment may be implemented with different technologies, by different and independent organisations, with different business models and objectives and with differing release and update cycles. We also want to be able to continue to develop our system at the same time as the other systems are beeing developed whithout impacting the other systems negatively or having our system being impacted negatively by changes in the other systems.
+
+The REST architectural style has been concieved and the HTTP protocol has been specified with specific intent to support the design and programming of such systems.
+
+These guidelines are based on the following basic premises:
 
 * *REST is an architectural style for software systems* as conceived and
    described by Roy Fielding in chapter 5 of his dissertation https://www.ics.uci.edu/%7Efielding/pubs/dissertation/rest_arch_style.htmi[_Architectural Styles and
@@ -68,16 +65,16 @@ These guidelines are based on the following basic premises:
    for implementing systems*. It is a description of a number of constraints and
    properties that systems can have and the emergent properties that such systems
    will have. To implement an actual system with a specific architectural style
-   requires developers to still make all practical design and implementation
+   requires programmers to still make all practical design and implementation
    decisions regarding which technical protocols and standards to use as well
-   as to actually write the software.
+   as how to actually write the software.
 
  * An application level protocol, like HTTP, is *not a technical specification
    of a specific system*. It is a specification of how different applications
    should interact, but not of what data should be exchanged or when it should
    be exchanged. Therefore developers of a specific system that uses HTTP have to
    make, as always, all the decisions regarding that system's use of HTTP and they
-   have to implement the system. Also, just using HTTP, does not mean that a
+   have to actually program the system. Also, just using HTTP, does not mean that a
    system becomes REST-ful. Developers need to understand REST and the emergent
    properties of that architectural style and construct their system using HTTP
    as a tool to achieve those properties.
